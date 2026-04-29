@@ -63,27 +63,10 @@ flutter:
   #
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
-  fonts:
-    - family: Inter
-      fonts:
-        - asset: assets/fonts/inter/Inter-Thin.ttf
-          weight: 100
-        - asset: assets/fonts/inter/Inter-ExtraLight.ttf
-          weight: 200
-        - asset: assets/fonts/inter/Inter-Light.ttf
-          weight: 300
-        - asset: assets/fonts/inter/Inter-Regular.ttf
-          weight: 400
-        - asset: assets/fonts/inter/Inter-Medium.ttf
-          weight: 500
-        - asset: assets/fonts/inter/Inter-SemiBold.ttf
-          weight: 600
-        - asset: assets/fonts/inter/Inter-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/inter/Inter-ExtraBold.ttf
-          weight: 800
-        - asset: assets/fonts/inter/Inter-Black.ttf
-          weight: 900
-
+  # Inter font assets stripped in this fork (tutero/0.19.0-strip-inter).
+  # Consumers MUST override TTypography.defaultFontFamily — the constant
+  # default `'packages/forui/Inter'` resolves to a missing asset and
+  # falls back to the system font.
+  #
   # For details regarding fonts in packages, see
   # https://flutter.dev/custom-fonts/#from-packages
